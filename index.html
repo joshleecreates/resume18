@@ -24,6 +24,10 @@ description: "Joshua Michael Lee"
               <i class="fab fa-github"></i>
             </span>github</a>
           </li>
+          <li><a class="contact__link" href="https://twitter.com/joshleecreates"><span class="icon">
+              <i class="fab fa-twitter"></i>
+            </span>twitter</a>
+          </li>
         </ul>
       </div>
     </div>
@@ -98,29 +102,41 @@ description: "Joshua Michael Lee"
   <div class="columns is-multiline">
     {% for project in site.projects reversed %}
       <div class="column is-4">
-          <div class="project card">
+          <div class="project card has-text-centered">
+            <div class="card-header">
+              <h3 class="is-centered card-header-title project__title">{{project.title}}</h3>
+            </div>
             <div class="card-content">
-              <h3 class="project__title">{{project.title}}</h3>
               <p class="project__description">{{project.description}}</p>
-              {% if project.github %}
-                  <a href="{{project.github}}">
-                    <span class="icon">
-                      <i class="fab fa-github"></i>
-                    </span>
-                    View source
-                  </a>
-              {% endif %}
-              {% if project.link %}
-                  <a href="{{project.link}}" target="_blank">
-                    <span class="icon">
-                      <i class="fas fa-external-link-alt"></i>
-                    </span>
-                    Launch
-                  </a>
-              {% endif %}
+            </div>
+            <div class="card-footer">
+            {% if project.github %}
+                <a class="card-footer-item" href="{{project.github}}">
+                  <span class="icon">
+                    <i class="fab fa-github"></i>
+                  </span>
+                  View source
+                </a>
+            {% endif %}
+            {% if project.link %}
+                <a class="card-footer-item" href="{{project.link}}" target="_blank">
+                  <span class="icon">
+                    <i class="fas fa-external-link-alt"></i>
+                  </span>
+                  Launch
+                </a>
+            {% endif %}
             </div>
           </div>
       </div>
     {% endfor %}
+  </div>
+</section>
+<section id="more" class="section more-content container">
+  <h1 class="title">More information...</h1>
+  <div class="content has-text-centered">
+      <p><a href="https://blog.joshuamlee.com">Read my blog</a></p>
+      <p><a href="https://blog.joshuamlee.com/about-josh-lee/">Contact me</a></p>
+      <p><a href="https://blog.joshuamlee.com/speaking-and-events/">See my calendar</a></p>
   </div>
 </section>

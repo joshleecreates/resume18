@@ -120,9 +120,6 @@ blockquote {
 }
 
 .card {
-  .column > & {
-    height: 100%;
-  }
   $card-border-color: $grey-darker;
   box-shadow: 0 0 1px $grey-light;
   border-radius: $card-border-radius;

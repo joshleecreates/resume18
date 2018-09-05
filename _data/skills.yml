@@ -4,7 +4,7 @@
   skills:
   - ['PHP', 9]
   - ['Elixir', 7]
-  - ['ES6', 6]
+  - ['JavaScript / ES6', 6]
   - ['Python', 5]
   - ['Java', 2]
   - ['Obj. C', 2]
@@ -21,8 +21,8 @@
   - ['Django', 4]
 - title: Databases
   skills:
-  - ['PostgreSQL', 8]
-  - ['MySQL', 8]
+  - ['SQL', 8]
+  - ['CouchDB', 5]
   - ['MongoDB', 5]
   - ['Redis', 5]
 - title: DevOps
@@ -31,7 +31,7 @@
   - ['Ubuntu', 8]
   - ['Apache', 7]
   - ['NGINX', 5]
-- title: Enivornments
+- title: Enivronments
   skills:
   - ['AWS', 8]
   - ['Heroku', 7]

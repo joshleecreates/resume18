@@ -43,23 +43,13 @@
       font-style: italic;
     }
   }
-
-  &:hover, &:focus {
-    background-color: $primary;
-    box-shadow: 1px 1px 5px;
-
-    .job__header {
-      @extend .has-text-white;
-    }
-  }
 }
 
 .card--skills {
   .card-header {
-    @extend .has-background-grey-light;
+    @extend .has-background-grey-lighter;
   }
   .card-header-title {
-    @extend .has-text-white;
     @extend .is-size-6;
     text-transform: uppercase;
   }
