@@ -19,33 +19,11 @@
   - ['Express', 5]
   - ['Symfony', 5]
   - ['Django', 4]
-- title: Databases
-  skills:
-  - ['SQL', 8]
-  - ['CouchDB', 5]
-  - ['MongoDB', 5]
-  - ['Redis', 5]
-- title: DevOps
-  skills:
-  - ['Docker', 8]
-  - ['Ubuntu', 8]
-  - ['Apache', 7]
-  - ['NGINX', 5]
-- title: Enivronments
-  skills:
-  - ['AWS', 8]
-  - ['Heroku', 7]
-  - ['GCP', 5]
 - title: Other Skills
   columns: 8
   skills:
   - ['Project Management', 8]
-  - ['Mentoring', 7]
-  - ['Public Speaking', 7]
+  - ['Community Building', 7]
+  - ['Mentoring', 6]
+  - ['Public Speaking', 6]
   - ['Agile Workflows', 5]
-- title: Natural Languages
-  skills:
-  - ['English', 9]
-  - ['Italian', 7]
-  - ['Spanish', 4]
-  - ['Japanese', 2]

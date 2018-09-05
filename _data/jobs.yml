@@ -48,12 +48,6 @@
     - Helped migrate accessibility department from paper forms to a digital workflow
     - Developed accessibility guidelines for use in web content creation throughout the University
     - Built systems with accessibility and security as top concerns
-- company: Self Employed
-  city: Burlington, VT
-  title: Freelance Web Developer
-  startdate: 2007-01-01
-  enddate: 2010-10-01
-  description: Developed custom web solutions using a PHP/MySQL stack.
 - company: Various Organizations
   city: Burlington, VT
   title: Volunteer
@@ -63,3 +57,9 @@
   details:
     - Organizer, <a href="https://www.meetup.com/Burlington-WordPress-Meetup/" target="_blank">Burlington WordPress Meetup</a>
     - Volunteer TA, <a href="https://www.girldevelopit.com/chapters/burlington" target="_blank">Girl Develop It Burlington</a>
+- company: Self Employed
+  city: Burlington, VT
+  title: Freelance Web Developer
+  startdate: 2007-01-01
+  enddate: 2010-10-01
+  description: Developed custom web solutions using a PHP/MySQL stack.

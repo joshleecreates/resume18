@@ -3,13 +3,13 @@ title: Joshua Michael Lee #title of your site
 url: "http://joshuamlee.com" #url for production. This is ignored during development but will be processed during build. During dev it will be 127.0.0.0:4000
 
 # Social
-socialimage: /img/social.jpg #default social image. Pages will use this if page specif socialimage is not specified
+socialimage: /img/joshlee.png #default social image. Pages will use this if page specif socialimage is not specified
 
 #Info
 email: josh@joshuamlee.com #used for formspree. This is where contact form info will send to
 
 # Google Analytics
-trackingID: UA-XXXXXXXXX-Y
+trackingID: UA-860282-8
 
 collections:
   pages:

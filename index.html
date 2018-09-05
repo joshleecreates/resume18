@@ -79,17 +79,22 @@ description: "Joshua Michael Lee"
   <h1 class="title">Skills</h1>
   <div class="columns is-multiline">
     {% for category in site.data.skills %}
-      <div class="column is-{{category.columns | default: 4}}">
+      <div class="column is-4">
         <div class="card card--skills">
           <div class="card-header">
             <h2 class="card-header-title is-centered">{{category.title}}</h2>
           </div>
-          <div class="card-content">
+          <div class="card-content has-text-centered">
             {% for skill in category.skills %}
-            <div class="columns skill is-mobile">
-              <div class="column is-3 skill__title">{{skill[0]}}</div>
-              <div class="column skill__progress"><progress class="progress is-medium {% if skill[1] > 7 %} {% elsif skill[1] > 5 %} is-info {% else %} is-primary {% endif %}" value="{{skill[1]}}" max="10">{{skill[1]}}/10</progress></div>
-            </div>
+              {% if skill[1] >= 5 %}
+              <div class="skill">
+                <div class="skill__title">
+                  {% if skill[1] >= 7 %}<strong>{{skill[0]}}</strong>
+                  {% else %}{{skill[0]}}{% endif %}
+                </div>
+                <!-- <div class="column skill__progress"><progress class="progress is-medium {% if skill[1] > 7 %} {% elsif skill[1] > 5 %} is-info {% else %} is-primary {% endif %}" value="{{skill[1]}}" max="10">{{skill[1]}}/10</progress></div> -->
+              </div>
+              {% endif %}
             {% endfor %}
           </div>
         </div>
@@ -133,7 +138,7 @@ description: "Joshua Michael Lee"
   </div>
 </section>
 <section id="more" class="section more-content container">
-  <h1 class="title">More information...</h1>
+  <h1 class="title">More Info</h1>
   <div class="content has-text-centered">
       <p><a href="https://blog.joshuamlee.com">Read my blog</a></p>
       <p><a href="https://blog.joshuamlee.com/about-josh-lee/">Contact me</a></p>
