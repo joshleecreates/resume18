@@ -1,0 +1,65 @@
+---
+- company: Self Employed
+  city: Burlington, VT
+  title: Consultant & Developer
+  startdate: 2017-05-01
+  enddate: false
+  description: Develop enterprise content management systems and consult with agencies on their workflows.
+  details:
+    - Develop enterprise content management systems
+    - Consult on application architecture, project management and deployment workflows
+    - Provide coaching to developers working with clients
+- company: <a href="https://localvore.co/" target="_blank">Localvore</a>
+  city: Burlington, VT
+  title: Senior Developer
+  startdate: 2016-10-01
+  enddate: 2017-04-17
+  description: Developed APIs and microservices using an Elixir stack.
+  details:
+    - Developed microservices for working with 3rd party APIs
+    - Developed a custom amqp routing layer for an event-driven stack
+    - Managed deployments using a combination of Docker and Heroku
+- company: <a href="https://localvore.co/" target="_blank">daft labs</a>
+  city: Burlington, VT
+  title: Junior Partner
+  startdate: 2015-03-15
+  enddate: 2016-08-31
+  description: Managed an agile software development team with a specialty in building technology start-ups.
+  details:
+    - Oversaw team growth from 5 to 18 employees
+    - Coordinated clients and employees to achieve succesful outcomes
+    - Worked with a wide range of technologies fitting various projects
+- company: QC Creative
+  city: Burlington, VT
+  title: Owner & Lead Developer
+  startdate: 2010-10-01
+  enddate: 2015-04-01
+  description: Led a team of contractors and employees specialized in developing content marketing platforms for businesses, non-profits, and educational institutions.
+  details:
+    - Developed content management systems using WordPress, Django, and other open source tools
+    - Coordinated designers, developers, and clients to meet aggressive deadlines
+- company: University of Vermont
+  city: Burlington, VT
+  title: Web Developer & Accessibility Consultant
+  startdate: 2010-06-01
+  enddate: 2014-05-30
+  description: Created Section 508 and WCAG compatible content management solutions. Consulted with and trained department leaders in accessibility and web management.
+  details:
+    - Helped migrate accessibility department from paper forms to a digital workflow
+    - Developed accessibility guidelines for use in web content creation throughout the University
+    - Built systems with accessibility and security as top concerns
+- company: Self Employed
+  city: Burlington, VT
+  title: Freelance Web Developer
+  startdate: 2007-01-01
+  enddate: 2010-10-01
+  description: Developed custom web solutions using a PHP/MySQL stack.
+- company: Various Organizations
+  city: Burlington, VT
+  title: Volunteer
+  startdate: 2014-01-01
+  enddate: false
+  description:
+  details:
+    - Organizer, <a href="https://www.meetup.com/Burlington-WordPress-Meetup/" target="_blank">Burlington WordPress Meetup</a>
+    - Volunteer TA, <a href="https://www.girldevelopit.com/chapters/burlington" target="_blank">Girl Develop It Burlington</a>

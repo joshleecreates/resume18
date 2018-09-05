@@ -1,0 +1,24 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# CREATED BY
+
+    Garrett Bland
+
+# THANKS
+
+    Everyone on siteground, github, and the jekyll folks
+
+# TECHNOLOGY
+
+    HTML5
+    CSS,SCSS,SASS
+    Jekyll
+    Javascript
+
+# FUN JOKE
+    What do you call a dinosaur that just got out of the water?...
+
+    -wet
+
+     ¯\_(ツ)_/¯

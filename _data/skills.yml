@@ -1,0 +1,51 @@
+---
+- title: Languages
+  columns: 6
+  skills:
+  - ['PHP', 9]
+  - ['Elixir', 7]
+  - ['ES6', 6]
+  - ['Python', 5]
+  - ['Java', 2]
+  - ['Obj. C', 2]
+  - ['SASS', 9]
+- title: Frameworks
+  columns: 6
+  skills:
+  - ['Phoenix', 9]
+  - ['WordPress', 9]
+  - ['React', 7]
+  - ['Laravel', 7]
+  - ['Express', 5]
+  - ['Symfony', 5]
+  - ['Django', 4]
+- title: Databases
+  skills:
+  - ['PostgreSQL', 8]
+  - ['MySQL', 8]
+  - ['MongoDB', 5]
+  - ['Redis', 5]
+- title: DevOps
+  skills:
+  - ['Docker', 8]
+  - ['Ubuntu', 8]
+  - ['Apache', 7]
+  - ['NGINX', 5]
+- title: Enivornments
+  skills:
+  - ['AWS', 8]
+  - ['Heroku', 7]
+  - ['GCP', 5]
+- title: Other Skills
+  columns: 8
+  skills:
+  - ['Project Management', 8]
+  - ['Mentoring', 7]
+  - ['Public Speaking', 7]
+  - ['Agile Workflows', 5]
+- title: Natural Languages
+  skills:
+  - ['English', 9]
+  - ['Italian', 7]
+  - ['Spanish', 4]
+  - ['Japanese', 2]

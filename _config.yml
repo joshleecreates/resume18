@@ -1,0 +1,23 @@
+# Site settings
+title: Joshua Michael Lee #title of your site
+url: "http://joshuamlee.com" #url for production. This is ignored during development but will be processed during build. During dev it will be 127.0.0.0:4000
+
+# Social
+socialimage: /img/social.jpg #default social image. Pages will use this if page specif socialimage is not specified
+
+#Info
+email: josh@joshuamlee.com #used for formspree. This is where contact form info will send to
+
+# Google Analytics
+trackingID: UA-XXXXXXXXX-Y
+
+collections:
+  pages:
+    output: true
+  projects:
+    output: false
+    permalink: /projects/:slug/
+
+
+#Under the hood
+exclude: [.scss, README.md, README.jpg gruntfile.js, package.json, .DS_Store, yarn.lock] #excludes these files from jekyll build

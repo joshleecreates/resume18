@@ -1,0 +1,126 @@
+---
+layout: default
+title: "Home"
+description: "Joshua Michael Lee"
+---
+<div class="hero is-primary">
+  <div class="hero-body">
+    <div class="container has-text-centered">
+      <h1 class="title">Hi, I'm Josh.</h1>
+      <h2 class="subtitle">I build software, relationships, and organizations.</h2>
+      <div class="tabs is-centered">
+        <ul>
+          <li><a class="contact__link" href="https://blog.joshuamlee.com">
+            <span class="icon">
+              <i class="fas fa-newspaper"></i>
+            </span>Blog
+          </a></li>
+          <li><a class="contact__link" href="mailto:josh@joshuamle.com">
+            <span class="icon">
+              <i class="fas fa-envelope"></i>
+            </span>Email</a>
+          </li>
+          <li><a class="contact__link" href="https://github.com/joshleecreates"><span class="icon">
+              <i class="fab fa-github"></i>
+            </span>github</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<section class="page-navigation">
+  <div class="tabs is-centered">
+    <ul>
+      <li><a href="#">Contact</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#cv">CV</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+    </ul>
+  </div>
+</section>
+<section id="about" style="max-width:600px" class="section container has-text-centered">
+  <h1 class="subtitle">About Me</h1>
+  <div class="content">
+    <p>I create elegant solutions to complex problems and build ecosystems that empower individuals to be more effective with less support.</p>
+    <p>Building teams and designing systems that allow organizations to focus on their core mission without technological disruption is my specialty.</p>
+  </div>
+</section>
+<section id="cv" class="section resume container">
+  <h1 class="title">Work Experience</h1>
+  <div class="columns is-multiline">
+    {% for job in site.data.jobs %}
+      <div class="column is-half-tablet is-one-third-widescreen">
+        <div class="job notification">
+          <div class="job__header">
+            <h2 class="job__company">{{job.company}}</h2>
+            <span class="job__date">{% unless job.enddate %}Since {% endunless %}{{ job.startdate | date: "%Y" }} {% if job.enddate %} - {{ job.enddate | date: "%Y" }}{% endif %}</span>
+          </div>
+          <div class="job__content">
+            <h3 class="job__position">{{job.title}}</h3>
+            <p>{{ job.description }}</p>
+            <ul class="job__details">
+              {% for detail in job.details %}
+                <li>{{ detail }}</li>
+              {% endfor %}
+            </ul>
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</section>
+<section id="skills" class="section skills container">
+  <h1 class="title">Skills</h1>
+  <div class="columns is-multiline">
+    {% for category in site.data.skills %}
+      <div class="column is-{{category.columns | default: 4}}">
+        <div class="card card--skills">
+          <div class="card-header">
+            <h2 class="card-header-title is-centered">{{category.title}}</h2>
+          </div>
+          <div class="card-content">
+            {% for skill in category.skills %}
+            <div class="columns skill is-mobile">
+              <div class="column is-3 skill__title">{{skill[0]}}</div>
+              <div class="column skill__progress"><progress class="progress is-medium {% if skill[1] > 7 %} {% elsif skill[1] > 5 %} is-info {% else %} is-primary {% endif %}" value="{{skill[1]}}" max="10">{{skill[1]}}/10</progress></div>
+            </div>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</section>
+<section id="projects" class="section projects container">
+  <h1 class="title">Projects</h1>
+  <div class="columns is-multiline">
+    {% for project in site.projects reversed %}
+      <div class="column is-4">
+          <div class="project card">
+            <div class="card-content">
+              <h3 class="project__title">{{project.title}}</h3>
+              <p class="project__description">{{project.description}}</p>
+              {% if project.github %}
+                  <a href="{{project.github}}">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    View source
+                  </a>
+              {% endif %}
+              {% if project.link %}
+                  <a href="{{project.link}}" target="_blank">
+                    <span class="icon">
+                      <i class="fas fa-external-link-alt"></i>
+                    </span>
+                    Launch
+                  </a>
+              {% endif %}
+            </div>
+          </div>
+      </div>
+    {% endfor %}
+  </div>
+</section>
